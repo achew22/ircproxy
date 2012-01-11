@@ -4,7 +4,11 @@ all:
 	${REBAR} compile
 test:
 	${REBAR} compile eunit
+clean:
+	${REBAR} clean
 start:
-	erl -pa ebin -boot start_sasl -s irc_app
+	erl -pa ./ebin -boot start_sasl -s ircproxy
 debug:
-	erl -pa ebin
+	erl -pa ./ebin
+console:
+	make debug

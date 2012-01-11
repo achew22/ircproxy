@@ -1,4 +1,4 @@
-{application, irc,
+{application, ircproxy,
  [
   {description, "Irc client"},
   {vsn, "1"},
@@ -7,6 +7,6 @@
                   kernel,
                   stdlib
                  ]},
-  {mod, { irc_app, []}},
+  {mod, { ircproxy, []}},
   {env, []}
  ]}.

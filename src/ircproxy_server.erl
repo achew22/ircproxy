@@ -1,4 +1,4 @@
--module(irc_server).
+-module(ircproxy_server).
 
 -behaviour(gen_server).
 

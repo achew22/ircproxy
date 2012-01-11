@@ -1,4 +1,4 @@
--module(irc_app).
+-module(ircproxy).
 
 -behaviour(application).
 
@@ -13,7 +13,7 @@
 start() -> application:start(?MODULE).
 
 start(_StartType, _StartArgs) ->
-    irc_sup:start_link().
+    ircproxy_sup:start_link().
 
 stop(_State) ->
     ok.

@@ -1,5 +1,5 @@
 
--module(irc_sup).
+-module(ircproxy_sup).
 
 -behaviour(supervisor).
 
@@ -25,7 +25,7 @@ start_link() ->
 
 init([]) ->
 	Children = [ 
-				?CHILD(irc_server, worker)
+				?CHILD(ircproxy_server, worker)
 				],
     {ok, { {one_for_one, 5, 10}, Children} }.
 
