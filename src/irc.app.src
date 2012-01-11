@@ -1,0 +1,12 @@
+{application, irc,
+ [
+  {description, "Irc client"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { irc_app, []}},
+  {env, []}
+ ]}.
